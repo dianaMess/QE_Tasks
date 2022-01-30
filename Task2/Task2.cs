@@ -17,11 +17,18 @@ namespace Task2
             sum = given_money - sum;
             for (int i = size - 1; i >= 0; i--)
             {
-                while (sum <= nominals[i])
+                while (sum >= nominals[i])
                 {
                     sum -= nominals[i];
                     nominals_count[i]++;
                 }
+            }
+            for (int i = 0; i < 11; i++)
+            {
+                if (nominals_count[i] > 0)
+                {
+                    Console.WriteLine("{0} рублей: {1}", nominals[i], nominals_count[i]);
+                } 
             }
         }
     }
