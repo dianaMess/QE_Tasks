@@ -44,7 +44,7 @@ namespace Task3
             }
             for (int i = 0; i < pairs.Count; i++)
             {
-                Console.WriteLine(pairs[i]);
+                Console.WriteLine("Одна пара в {0} диоптрий", pairs[i]);
             }
         }
     }

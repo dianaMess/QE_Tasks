@@ -36,7 +36,6 @@ namespace QE_Tasks
                     sum -= i;
                     break;
                 }
-                Console.WriteLine(array[i]);
             }
             Console.WriteLine(sum);
         }
